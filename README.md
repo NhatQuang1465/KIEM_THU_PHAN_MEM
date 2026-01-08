@@ -1,9 +1,9 @@
-# My Multi-Module Maven Project
+# Kiểm thử phần mềm
 
 ## Tổng quan
 Repository này chứa **2 project Maven** (module) được quản lý dưới một root project:
 - `project1`
-- `
+- `unit-test`
 
 Root project dùng để **quản lý multi-module Maven**, cho phép build tất cả module cùng lúc.
 
@@ -15,9 +15,16 @@ my-repo/
 ├─ project1/
 │ ├─ pom.xml
 │ └─ src/
-├─ project2/
+│     └─ README.md
+├─ unit-test/
+│ ├─ .idea
+│ ├─ .mvn
+│ ├─ target
 │ ├─ pom.xml
 │ └─ src/
+│      ├─ main
+│      ├─ test
+│      └─ README.md
 ├─ pom.xml # root pom quản lý các module
 ├─ .gitignore
 └─ README.md
