@@ -1,7 +1,8 @@
-
 # Student Analyzer - Unit Testing Project
+## Thông tin sinh viên
+- Nguyễn Nhật Quang
+- Mã SV: BIT230346
 ## Công nghệ sử dụng
-
 - Java (JDK 17)
 - Maven (dependency management)
 - JUnit 5 + AssertJ (hoặc Hamcrest) cho unit test

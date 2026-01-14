@@ -1,8 +1,10 @@
 # Kiểm thử phần mềm
-
+## Thông tin sinh viên
+- Nguyễn Nhật Quang 
+- Mã SV: BIT230346
 ## Tổng quan
 Repository này chứa **2 project Maven** (module) được quản lý dưới một root project:
-- `project1`
+- `project1-CantUnsee`
 - `unit-test`
 
 Root project dùng để **quản lý multi-module Maven**, cho phép build tất cả module cùng lúc.
@@ -12,7 +14,7 @@ Root project dùng để **quản lý multi-module Maven**, cho phép build tấ
 ## Cấu trúc thư mục
 ```
 my-repo/
-├─ project1/
+├─ project1-CantUnsee/
 │ ├─ pom.xml
 │ └─ src/
 │     └─ README.md
