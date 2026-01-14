@@ -75,7 +75,8 @@ README.md
 
 ## 5. Kết quả chạy kiểm thử
 
-
+![img.png](img.png)
+![img_1.png](img_1.png)
 
 ## 6. Nhận xét – Đánh giá
 
