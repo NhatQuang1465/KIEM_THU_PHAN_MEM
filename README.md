@@ -37,6 +37,39 @@ my-repo/
 - `src/test/java`: chứa code test.
 
 ---
+# Bài Thực Hành Tuần 1 - Bài tập Làm quen Can't Unsee
+## Mô tả bài tập
+Trong kiểm thử phần mềm, việc phát hiện lỗi giao diện (UI) là cực kỳ quan trọng. Bài tập này sử dụng công cụ CantUnsee để kiểm tra khả năng phân biệt sự khác nhau giữa hai thiết kế về các yếu tố:
+
+- Typography (Font chữ, độ đậm nhạt).
+- Color & Contrast (Màu sắc và độ tương phản).
+- Spacing & Alignment (Khoảng cách, padding, margin và căn chỉnh).
+- Border & Radius (Viền và độ bo góc).
+## Kết quả đạt được
+- Cấp độ hoàn thành: Hard 
+- Số điểm đạt được: 7630
+## Ảnh minh chứng
+<img width="1252" height="875" alt="image" src="https://github.com/user-attachments/assets/d97b513b-7d04-409a-975f-b2fae8b79b7a" />
+
+# Bài Thực Hành Tuần 2 - Student Analyzer - Unit Testing Project
+## Công nghệ sử dụng
+- Java (JDK 17)
+- Maven (dependency management)
+- JUnit 5 + AssertJ (hoặc Hamcrest) cho unit test
+- Ứng dụng Java đơn giản dùng để phân tích danh sách học sinh dựa trên điểm số, tập trung vào việc viết **unit test** bằng JUnit và tuân thủ quy trình phát triển có sử dụng GitHub Issues.
+
+## Mô tả bài toán
+
+Chương trình quản lý thông tin học sinh với các chức năng chính:
+
+- Đếm số học sinh **giỏi** (điểm trung bình ≥ 8.0 và tất cả điểm thành phần ≥ 0 và ≤ 10)
+- Tính **điểm trung bình** chỉ sử dụng các điểm **hợp lệ** (0–10)
+
+Các hàm chính được triển khai trong class `StudentAnalyzer`:
+
+- `countExcellentStudents(List<Student> students)` → trả về số học sinh giỏi
+- `calculateValidAverage(List<Double> scores)` → tính trung bình các điểm hợp lệ
+
 
 ## Hướng dẫn sử dụng
 
