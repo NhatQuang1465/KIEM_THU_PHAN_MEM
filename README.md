@@ -105,38 +105,17 @@ Trong kiểm thử phần mềm, việc phát hiện lỗi giao diện (UI) là 
 git clone https://github.com/username/my-repo.git
 cd my-repo
 ```
-2. Build toàn bộ module
+### 2. Build toàn bộ module
 ```bash
 mvn clean install
 ```
-3. Chạy project
-Mỗi module là project Java chuẩn Maven.
+### 3. Chạy project
+- Mỗi module hoạt động như một project Java Maven độc lập.
 
-Vào project1 hoặc project2 → chạy class Main hoặc các class bạn tạo.
+- Để chạy:
 
-4. Thêm module mới
-Thêm folder module mới → tạo pom.xml Maven → thêm vào root pom.xml:
+  - Mở module cần chạy (ví dụ project1, project2)
 
-xml
-Copy code
-<modules>
-    <module>project1</module>
-    <module>project2</module>
-    <module>project3</module>
-</modules>
-Git
-Khởi tạo Git:
+  - Tìm class Main (hoặc bất kỳ class chạy được)
 
-```bash
-Copy code
-git init
-git add .
-git commit -m "Initial commit"
-Đẩy lên GitHub:
-```
-```bash
-Copy code
-git remote add origin https://github.com/username/my-repo.git
-git branch -M main
-git push -u origin main
-```
+  - Run trực tiếp từ IDE hoặc qua Maven
