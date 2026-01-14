@@ -1,6 +1,6 @@
 # Kiểm thử phần mềm
 ## Thông tin sinh viên
-- Nguyễn Nhật Quang 
+- Họ và tên: Nguyễn Nhật Quang 
 - Mã SV: BIT230346
 ## Tổng quan
 Repository này chứa **2 project Maven** (module) được quản lý dưới một root project:
@@ -102,7 +102,7 @@ Trong kiểm thử phần mềm, việc phát hiện lỗi giao diện (UI) là 
 
 ### 1. Clone repository
 ```bash
-git clone https://github.com/username/my-repo.git
+git clone https://github.com/NhatQuang1465/KIEM_THU_PHAN_MEM
 cd my-repo
 ```
 ### 2. Build toàn bộ module
