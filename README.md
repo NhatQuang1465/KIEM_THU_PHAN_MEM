@@ -51,25 +51,52 @@ Trong kiểm thử phần mềm, việc phát hiện lỗi giao diện (UI) là 
 ## Ảnh minh chứng
 <img width="1252" height="875" alt="image" src="https://github.com/user-attachments/assets/d97b513b-7d04-409a-975f-b2fae8b79b7a" />
 
+ ---
+
 # Bài Thực Hành Tuần 2 - Student Analyzer - Unit Testing Project
-## Công nghệ sử dụng
-- Java (JDK 17)
-- Maven (dependency management)
-- JUnit 5 + AssertJ (hoặc Hamcrest) cho unit test
-- Ứng dụng Java đơn giản dùng để phân tích danh sách học sinh dựa trên điểm số, tập trung vào việc viết **unit test** bằng JUnit và tuân thủ quy trình phát triển có sử dụng GitHub Issues.
+## 1. Mục tiêu
+- Làm quen với kiểm thử đơn vị (Unit Testing) trong phát triển phần mềm
+- Hiểu cách viết và chạy các ca kiểm thử tự động bằng JUnit
+- Nâng cao kỹ năng phân tích yêu cầu và xây dựng test case
+- Nhận thức được vai trò của kiểm thử đơn vị trong việc đảm bảo chất lượng phần mềm
 
-## Mô tả bài toán
+---
 
-Chương trình quản lý thông tin học sinh với các chức năng chính:
+## 2. Công cụ sử dụng
+- Ngôn ngữ lập trình: Java
+- Thư viện kiểm thử: JUnit 5
+- Môi trường phát triển: IntelliJ IDEA
+- Nền tảng quản lý mã nguồn: GitHub
 
-- Đếm số học sinh **giỏi** (điểm trung bình ≥ 8.0 và tất cả điểm thành phần ≥ 0 và ≤ 10)
-- Tính **điểm trung bình** chỉ sử dụng các điểm **hợp lệ** (0–10)
+---
 
-Các hàm chính được triển khai trong class `StudentAnalyzer`:
+## 3. Nội dung thực hiện
+- Xây dựng lớp `StudentAnalyzer` để xử lý và phân tích danh sách điểm số học sinh
+- Cài đặt các phương thức:
+    - Đếm số học sinh đạt loại Giỏi (điểm ≥ 8.0)
+    - Tính điểm trung bình của các điểm hợp lệ (từ 0 đến 10)
+- Loại bỏ các dữ liệu không hợp lệ (điểm âm hoặc lớn hơn 10)
+- Viết các ca kiểm thử đơn vị cho từng phương thức, bao gồm:
+    - Trường hợp bình thường
+    - Trường hợp biên (danh sách rỗng, giá trị 0 và 10)
+    - Trường hợp dữ liệu không hợp lệ
+- Thực hiện commit mã nguồn và quản lý công việc thông qua GitHub Issues
 
-- `countExcellentStudents(List<Student> students)` → trả về số học sinh giỏi
-- `calculateValidAverage(List<Double> scores)` → tính trung bình các điểm hợp lệ
+---
 
+## 4. Nhận xét – Đánh giá
+- Việc viết kiểm thử đơn vị giúp phát hiện lỗi logic sớm trong quá trình phát triển
+- JUnit hỗ trợ kiểm thử tự động, giúp tiết kiệm thời gian và tăng độ tin cậy của chương trình
+- Thông qua bài thực hành, em hiểu rõ hơn cách xây dựng test case phù hợp với yêu cầu bài toán
+- Việc kết hợp AI tạo sinh giúp tối ưu quá trình lập trình và kiểm thử
+
+---
+
+## 5. Kết luận
+- Kiểm thử đơn vị là bước quan trọng trong quy trình phát triển phần mềm
+- Bài thực hành giúp củng cố kiến thức về kiểm thử và lập trình Java
+- Kỹ năng viết unit test sẽ hỗ trợ hiệu quả cho các bài tập và dự án nhóm trong học phần cũng như trong thực tế
+---
 
 ## Hướng dẫn sử dụng
 
