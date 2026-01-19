@@ -49,5 +49,22 @@ void testLowerRobustBoundary() {
     StudentAnalyzer analyzer = new StudentAnalyzer();
     assertEquals(0, analyzer.countExcellentStudents(Arrays.asList(-0.1, 0.0)));
 }
+@Test
+void testMCDC_AandB_True() {
+    StudentAnalyzer analyzer = new StudentAnalyzer();
+    assertEquals(1, analyzer.countExcellentStudents(Arrays.asList(9.0)));
+}
+
+@Test
+void testMCDC_A_False_B_True() {
+    StudentAnalyzer analyzer = new StudentAnalyzer();
+    assertEquals(0, analyzer.countExcellentStudents(Arrays.asList(7.9)));
+}
+
+@Test
+void testMCDC_A_True_B_False() {
+    StudentAnalyzer analyzer = new StudentAnalyzer();
+    assertEquals(0, analyzer.countExcellentStudents(Arrays.asList(10.1)));
+}
 
 }
