@@ -32,5 +32,22 @@ void testValidNonExcellent() {
     StudentAnalyzer analyzer = new StudentAnalyzer();
     assertEquals(0, analyzer.countExcellentStudents(Arrays.asList(5.0, 6.5, 7.9)));
 }
+@Test
+void testAllExcellent() {
+    StudentAnalyzer analyzer = new StudentAnalyzer();
+    assertEquals(3, analyzer.countExcellentStudents(Arrays.asList(8.0, 9.0, 10.0)));
+}
+
+@Test
+void testUpperRobustBoundary() {
+    StudentAnalyzer analyzer = new StudentAnalyzer();
+    assertEquals(1, analyzer.countExcellentStudents(Arrays.asList(10.0, 10.1)));
+}
+
+@Test
+void testLowerRobustBoundary() {
+    StudentAnalyzer analyzer = new StudentAnalyzer();
+    assertEquals(0, analyzer.countExcellentStudents(Arrays.asList(-0.1, 0.0)));
+}
 
 }
