@@ -27,4 +27,10 @@ class StudentAnalyzerTest {
         assertEquals(2.85, analyzer.calculateValidAverage(Arrays.asList(0.0, 10.0, 0.0, 0.0, 0.0, 0.0, 10.0)), 0.01);
         assertEquals(0, analyzer.calculateValidAverage(Arrays.asList(-5.0, 12.0)), 0.01);
     }
+    @Test
+void testValidNonExcellent() {
+    StudentAnalyzer analyzer = new StudentAnalyzer();
+    assertEquals(0, analyzer.countExcellentStudents(Arrays.asList(5.0, 6.5, 7.9)));
+}
+
 }
