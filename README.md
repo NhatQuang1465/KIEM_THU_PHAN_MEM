@@ -192,3 +192,5 @@ Results:
 - results/tg1.csv
 - results/tg2.csv
 - results/tg3.csv
+## Ảnh
+<img width="987" height="845" alt="image" src="https://github.com/user-attachments/assets/5eb27543-1740-4b82-abf9-9ba91ff514a0" />
