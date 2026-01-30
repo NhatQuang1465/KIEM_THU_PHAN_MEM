@@ -119,3 +119,76 @@ mvn clean install
   - Tìm class Main (hoặc bất kỳ class chạy được)
 
   - Run trực tiếp từ IDE hoặc qua Maven
+
+# JMeter Performance Testing Report
+
+## Target website
+- https://www.wikipedia.org
+
+## Test environment
+- Tool: Apache JMeter 5.6.3
+- OS: Windows
+- Test date: 28/01/2026
+
+## Test scenarios
+
+### TG1_Basic
+- Users: 10
+- Loop count: 5
+- Request: GET /
+
+Results:
+- Avg Response Time: 697 ms
+- Throughput: 1.6 req/sec
+- Error Rate: 0.55 %
+
+---
+
+### TG2_Heavy
+- Users: 50
+- Ramp-up: 30s
+- Requests:
+  - GET /
+  - GET /wiki/Main_Page
+
+Results:
+- Avg Response Time: 1025 ms
+- Throughput: 1.2 req/sec
+- Error Rate: 0.58 %
+
+---
+
+### TG3_Custom_60s
+- Users: 20
+- Duration: 60s
+- Requests:
+  - GET /wiki/Software_testing
+  - GET /wiki/Apache_JMeter
+
+Results:
+- Avg Response Time: 852 ms (SoftwareTesting)
+- Avg Response Time: 411 ms (ApacheJMeter)
+- Throughput: 14.9 req/sec
+- Error Rate: 0.43 % (SoftwareTesting)
+- Error Rate: 0.27 % (ApacheJMeter)
+
+---
+
+## Overall Results (Combined)
+- Avg Response Time (TOTAL): 650 ms
+- Throughput (TOTAL): 32.5 req/sec
+- Error Rate (TOTAL): 0.37 %
+
+---
+
+## Analysis & Conclusion
+- Khi tăng số lượng người dùng (TG2), thời gian phản hồi trung bình tăng lên rõ rệt so với TG1.
+- TG3 cho thấy hệ thống có thể xử lý lưu lượng ổn định trong 60 giây với throughput cao.
+- Tỷ lệ lỗi dưới 1% cho thấy hệ thống hoạt động tương đối ổn định dưới tải.
+- Website Wikipedia đáp ứng tốt với các kịch bản kiểm thử cơ bản và tải trung bình.
+
+## Files
+- plans/perf_test.jmx
+- results/tg1.csv
+- results/tg2.csv
+- results/tg3.csv
